@@ -6,12 +6,6 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repo') {
-            steps {
-                git 'https://github.com/yogeshagre/first-order-discount-ml.git'
-            }
-        }
-
         stage('Build Docker Image') {
             steps {
                 script {
